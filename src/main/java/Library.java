@@ -10,4 +10,8 @@ public class Library {
     public int bookCount() {
         return books.size();
     }
+
+    public void addBook(Book book) {
+        books.add(book);
+    }
 }

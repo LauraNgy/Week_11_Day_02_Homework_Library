@@ -14,11 +14,14 @@ public class Library {
     }
 
     public void addBook(Book book) {
-        this.books.add(book);
+        if ( this.capacity > bookCount() ) {
+            this.books.add(book);
+        }
     }
 
 
     public int checkCapacity() {
         return this.capacity;
     }
+
 }

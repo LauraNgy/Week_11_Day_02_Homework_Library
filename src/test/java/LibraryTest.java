@@ -37,4 +37,14 @@ public class LibraryTest {
         assertEquals(4, library.checkCapacity());
     }
 
+    @Test
+    public void overCapacityBookRefused() {
+        library.addBook(book1);
+        library.addBook(book2);
+        library.addBook(book3);
+        library.addBook(book4);
+        library.addBook(book5);
+        assertEquals(4, library.bookCount());
+    }
+
 }

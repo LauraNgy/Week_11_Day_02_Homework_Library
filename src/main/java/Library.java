@@ -24,4 +24,7 @@ public class Library {
         return this.capacity;
     }
 
+    public void lend(Book book) {
+        this.books.remove(book);
+    }
 }

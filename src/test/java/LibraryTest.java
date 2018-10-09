@@ -47,4 +47,12 @@ public class LibraryTest {
         assertEquals(4, library.bookCount());
     }
 
+    @Test
+    public void lend() {
+        library.addBook(book1);
+        library.addBook(book2);
+        library.lend(book2);
+        assertEquals(1, library.bookCount());
+    }
+
 }

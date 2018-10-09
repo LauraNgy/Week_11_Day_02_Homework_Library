@@ -18,7 +18,7 @@ public class LibraryTest {
         book3 = new Book("A storm of swords", "George R. R. Martin", "fantasy");
         book4 = new Book("A feast for crows", "George R. R. Martin", "fantasy");
         book5 = new Book("A dance with dragons", "George R. R. Martin", "fantasy");
-        library = new Library();
+        library = new Library(4);
     }
 
     @Test
@@ -32,5 +32,9 @@ public class LibraryTest {
         assertEquals(1, library.bookCount());
     }
 
+    @Test
+    public void checkCapacity() {
+        assertEquals(4, library.checkCapacity());
+    }
 
 }
